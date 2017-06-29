@@ -1,3 +1,6 @@
 [submodule "back_api_tweet"]
 	path = back_api_tweet
 	url = https://github.com/ttiede/back_api_tweet.git
+[submodule "frontend-tweet"]
+	path = frontend-tweet
+	url = git@github.com:ttiede/frontend-tweet.git
