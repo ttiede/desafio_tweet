@@ -1,0 +1,16 @@
+version: '2'
+services:
+  api:
+    build: ./back_api_tweet
+    command: rails server --port 3000 --binding 0.0.0.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/api
+  front:
+    build: ./frontend-tweet
+    command: npm start
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/front
