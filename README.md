@@ -1,11 +1,47 @@
  
-Projeto completo com container
+***Projeto completo com container***
 ------------------------------
+----------
+
+**Dependências**
+
+ - Docker
+ - Docker-compose
+Gerando o container e executando utilizando o docker, execute o comando abaixo na pasta do projeto:
+
+
+> docker-compose up
+
+Iniciando assim os aplicativos responsáveis pelo backend e frontend.
+
+**Backend**
+-----------
+
+Acesso ao callpointers disponibilizado pelo backend:
+
+Lista dos tweets por relevância.
+http://localhost:3000/most_relevants
+
+Lista os usuários que mais mencionam a empresa.
+http://localhost:3000/most_mentions
+
+**Testes**
+Executar os testes do container, execute o comando:
+
+   
+
+> docker-compose run -e "RAILS_ENV=test" api rspec spec
+
+**Frontend**
+------------
+
+O acesso da aplicação frontend é feito na url:
+http://localhost:4200
 
 
 ----------
 
-***Aplicação Backend - Listagem de Tweets***
+Aplicação Backend - Listagem de Tweets
 =================
 
 
@@ -109,39 +145,3 @@ A url para acessar a aplicação frontend  é
 > http://localhost:4200
 
 
-----------
-
-**Dependências**
-
- - Docker
- - Docker-compose
-Gerando o container e executando utilizando o docker, execute o comando abaixo na pasta do projeto:
-
-
-> docker-compose up
-
-Iniciando assim os aplicativos responsáveis pelo backend e frontend.
-
-**Backend**
------------
-
-Acesso ao callpointers disponibilizado pelo backend:
-
-Lista dos tweets por relevância.
-http://localhost:3000/most_relevants
-
-Lista os usuários que mais mencionam a empresa.
-http://localhost:3000/most_mentions
-
-**Testes**
-Executar os testes do container, execute o comando:
-
-   
-
-> docker-compose run -e "RAILS_ENV=test" api rspec spec
-
-**Frontend**
-------------
-
-O acesso da aplicação frontend é feito na url:
-http://localhost:4200
