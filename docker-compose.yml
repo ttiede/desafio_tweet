@@ -7,10 +7,10 @@ services:
       - "3000:3000"
     volumes:
       - .:/api
-  front:
-    build: ./frontend-tweet
-    command: npm start
-    ports:
-      - "4200:4200"
-    volumes:
-      - .:/front
+#  front:
+#    build: ./frontend-tweet
+#    command: npm start
+#    ports:
+#      - "4200:4200"
+#    volumes:
+#      - .:/front
